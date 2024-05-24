@@ -1,0 +1,44 @@
+
+#page {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+#character {
+    background-color: #485460;
+    border: 2px solid #1abc9c;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+#character:hover {
+    transform: scale(1.05);
+}
+
+.character_img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.character_name,
+.character_infos {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
+.character_description {
+    font-weight: bold;
+    color: #f1c40f;
+}
+
+@media (max-width: 600px) {
+    #character {
+        width: 90%;
+    }
+}
